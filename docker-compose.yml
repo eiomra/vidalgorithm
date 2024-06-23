@@ -1,0 +1,8 @@
+services:
+  recommender:
+    build: .
+    command: python main.py 1 5 
+    volumes:
+      - .:/app
+    working_dir: /app
+
